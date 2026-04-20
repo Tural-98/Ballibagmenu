@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ballı Bağ Restaurant</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  background:#fff8e1;
+}
+
+/* HERO */
+.hero{
+  height:90vh;
+  background: url('./pictures/fon.png') center center / cover no-repeat;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:white;
+}
+.hero h1{
+  font-size:40px;
+  animation:fadeIn 2s ease;
+}
+
+.hero p{
+  margin-top:10px;
+  font-size:18px;
+}
+
+@keyframes fadeIn{
+  from{opacity:0; transform:translateY(30px);}
+  to{opacity:1; transform:translateY(0);}
+}
+
+/* SECTION */
+.section{
+  padding:20px;
+}
+
+.title{
+  text-align:center;
+  margin-bottom:15px;
+  color:#ff9800;
+}
+
+/* MENU CARD */
+.menu{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:15px;
+}
+
+.card{
+  background:white;
+  padding:15px;
+  border-radius:12px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:scale(1.03);
+}
+
+.item{
+  display:flex;
+  justify-content:space-between;
+  padding:5px 0;
+  border-bottom:1px dashed #ddd;
+}
+
+/* ABOUT */
+.about{
+  text-align:center;
+  padding:20px;
+  background:#fff3c4;
+  border-radius:10px;
+}
+
+/* FOOTER */
+.footer{
+  text-align:center;
+  padding:15px;
+  background:#ffcc00;
+  margin-top:20px;
+}
+
+/* RESPONSIVE */
+@media(min-width:768px){
+  .menu{
+    grid-template-columns:1fr 1fr;
+  }
+}
+
+/* BEE ANIMATION */
+.bee{
+  position:fixed;
+  top:20px;
+  left:-50px;
+  font-size:30px;
+  animation:fly 10s linear infinite;
+}
+
+@keyframes fly{
+  0%{left:-50px; top:50px;}
+  50%{left:90%; top:100px;}
+  100%{left:-50px; top:50px;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="bee">🐝</div>
+
+<!-- HERO -->
+<div class="hero">
+  <div>
+    <h1>Ballı Bağ Restaurant 🍯</h1>
+    <p>Dağların qoynunda təbii dadlar</p>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<div class="section">
+  <div class="about">
+    <h2>Haqqımızda</h2>
+    <p>İsmayıllı rayonunun Sumağallı kəndində yerləşən Ballı Bağ restoranı sizə təbii, kənd məhsulları ilə hazırlanmış yeməklər təqdim edir. Arı balı, təmiz hava və dağ mənzərəsi ilə unudulmaz istirahət!</p>
+    <p><b>📞 051 300 34 32</b></p>
+  </div>
+</div>
+
+<!-- MENU -->
+<div class="section">
+  <h2 class="title">🍽️ Menyu</h2>
+
+  <div class="menu">
+
+    <div class="card">
+      <h3>İçkilər</h3>
+      <div class="item"><span>Coca-cola</span><span>3 AZN</span></div>
+      <div class="item"><span>Fanta</span><span>3 AZN</span></div>
+      <div class="item"><span>Duşes</span><span>3 AZN</span></div>
+      <div class="item"><span>Tərxun</span><span>3 AZN</span></div>
+      <div class="item"><span>Meyvə şirəsi</span><span>5 AZN</span></div>
+      <div class="item"><span>Ev kompotu</span><span>5 AZN</span></div>
+      <div class="item"><span>Ayran</span><span>3 AZN</span></div>
+    </div>
+
+    <div class="card">
+      <h3>Salatlar</h3>
+      <div class="item"><span>Xiyar</span><span>2 AZN</span></div>
+      <div class="item"><span>Pamidor</span><span>2 AZN</span></div>
+      <div class="item"><span>Göyərti</span><span>2 AZN</span></div>
+      <div class="item"><span>Pendir</span><span>3 AZN</span></div>
+      <div class="item"><span>Çoban salatı</span><span>4 AZN</span></div>
+    </div>
+
+    <div class="card">
+      <h3>Səhər Yeməyi</h3>
+      <div class="item"><span>Bal</span><span>5 AZN</span></div>
+      <div class="item"><span>Qaymaq</span><span>5 AZN</span></div>
+      <div class="item"><span>Yumurta</span><span>2 AZN</span></div>
+      <div class="item"><span>Çay</span><span>3 AZN</span></div>
+    </div>
+
+    <div class="card">
+      <h3>Kabablar</h3>
+      <div class="item"><span>Lülə kabab</span><span>9 AZN</span></div>
+      <div class="item"><span>Tikə kabab</span><span>9 AZN</span></div>
+      <div class="item"><span>Antrikot</span><span>10 AZN</span></div>
+      <div class="item"><span>Şapalaq</span><span>15 AZN</span></div>
+      <div class="item"><span>Balıq</span><span>8-12 AZN</span></div>
+    </div>
+    <div class="card">
+      <h3>Küp yeməkləri</h3>
+      <div class="item"><span>Quzu</span><span>36 AZN</span></div>
+      <div class="item"><span>Dana</span><span>32 AZN</span></div>
+      <div class="item"><span>Yarpaq dolması</span><span>36 AZN</span></div>
+    </div>
+     <div class="card">
+      <h3>Təndir</h3>
+      <div class="item"><span>Səbət 1 kq</span><span>40 AZN</span></div>
+      <div class="item"><span>Qol 1 kq</span><span>40 AZN</span></div>
+      <div class="item"><span>Bud 1 kq</span><span>40 AZN</span></div>
+      <div class="item"><span>Çolpa</span><span>22 AZN</span></div>
+      <div class="item"><span>Bildirçin</span><span>8 AZN</span></div>
+    </div>
+    <div class="card">
+      <h3>Qazan yeməkləri</h3>
+      <div class="item"><span>Soyutma dana</span><span>8 AZN</span></div>
+      <div class="item"><span>Soyutma quzu</span><span>9 AZN</span></div>
+      <div class="item"><span>Buğlama dana</span><span>8 AZN</span></div>
+      <div class="item"><span>Buğlama quzu</span><span>9 AZN</span></div>
+      <div class="item"><span>Çəpiş aoyutma</span><span>9 AZN</span></div>
+    </div>
+
+    <div class="card">
+      <h3>Şirəli tava yeməkləri</h3>
+      <div class="item"><span>Quzu</span><span>10 AZN</span></div>
+      <div class="item"><span>Dana</span><span>9 AZN</span></div>
+      <div class="item"><span>Çəpiş</span><span>10 AZN</span></div>
+      <div class="item"><span>Lülə pamidorlu</span><span>10 AZN</span></div>
+      <div class="item"><span>Kənd toyuqu</span><span>20 AZN</span></div>
+      <div class="item"><span>Bildirçin</span><span>6 AZN</span></div>
+      <div class="item"><span>Şapalaq dana</span><span>15 AZN</span></div>
+      <div class="item"><span>Antrikot quzu</span><span>12 AZN</span></div>
+      <div class="item"><span>Duşonka</span><span>10 AZN</span></div>
+      <div class="item"><span>Tabaka</span><span>20 AZN</span></div>
+      <div class="item"><span>Çığırtma</span><span>25 AZN</span></div>
+    </div>
+
+  </div>
+</div>
+
+<!-- GALLERY -->
+<div class="section">
+  <h2 class="title">📸 Şəkillər</h2>
+  <div class="menu">
+   <img src="./pictures/sekil2.jpg" style="width:100%; border-radius:10px;">
+<img src="./pictures/sekil3.jpg" style="width:100%; border-radius:10px;">
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <p>Ballı Bağ Restaurant | İsmayıllı - Sumağallı</p>
+</div>
+
+</body>
+</html>
